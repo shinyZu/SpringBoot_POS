@@ -1,18 +1,15 @@
-# Enterprise Level Application with Spring Web MVC
+# Enterprise Level Application with Spring Boot
 
 ## POS system 
 - Back-end & Front-end on seperate origins
 - handled cross-origin requests (CORS issue)
-- configured JNDI Resource for a Tomcat Connection Pool
-- applied Layered Architecture 
+- applied Layered Architecture
+- easy dependency management with Starters 
 
 ## Used :
 
-- Spring Web MVC
-- Spring Data JPA
-- Apache Tomcat Web Container
+- Spring Boot
 - Maven
-- Hibernate
 - AJAX
 - MySQL
 - HTML
