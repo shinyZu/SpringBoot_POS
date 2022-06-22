@@ -32,7 +32,4 @@ public class Customer {
         this.customerId = customerId;
         this.customerName = customerName;
     }
-
-    /*@OneToMany(mappedBy = "customer", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private List<Orders> orderList = new ArrayList<>();*/
 }

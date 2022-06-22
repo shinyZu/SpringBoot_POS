@@ -24,7 +24,4 @@ public class Item {
         this.itemCode = itemCode;
         this.description = description;
     }
-
-    /*@OneToMany(mappedBy = "item")
-    private List<OrderDetail> orderDetails = new ArrayList<>();*/
 }
