@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Customers</title>
+
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link href="/assets/css/fonts/css/all.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/assets/css/pos-header.css">
+    <link rel="stylesheet" href="/assets/css/pos.css"> -->
+    <link rel="stylesheet" href="assets/css/pos-header.css">
+    <link rel="stylesheet" href="assets/css/pos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Amarante&family=Aref+Ruqaa:wght@700&family=Bakbak+One&family=Baloo+Chettan+2:wght@500&family=Metamorphous&family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/pos/pos-logo.png" alt="" width="50px">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link "  href="../BootstrapPOS/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="../BootstrapPOS/item.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../BootstrapPOS/orders.html">Orders</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex pe-5">
+                    <input id="header-searchBar" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <ul class="navbar-nav navbar-dark bg-dark">
+                    <li class="nav-item pe-4"><a class="nav-link" href="#"><span><i class="fas fa-user pe-2"></i></span>Sign Up</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span><i class="fas fa-sign-in-alt pe-2"></i></span>Sign In</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav> -->
+    
+    <main>
+        <section id="section-1" class="row justify-content-center mx-auto container-fluid ">
+            <section class="row">
+                <div class="col-12  text-center title-bg">
+                    <p id="title-mng-cust" >Manage Customers</p>
+                </div>
+            </section>
+
+            <section class="row">
+
+                <!-- Customer Form -->
+                <form class="content-bg mx-auto mb-5 col-12 col-sm-12 col-lg-4">
+                    
+                    <div class="d-flex pt-3 mb-3">
+                        <input class="form-control me-2 bg-input" type="search" placeholder="ID,Name,Address" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </div>
+
+                    <div class="row">
+                        <div class="mb-3 col-sm-6 col-lg-12 col-xl-12 col-xxl-12">
+                            <label for="customerId" class="form-label">Customer ID :</label>
+                            <input type="text" class="form-control bg-input" id="customerId">
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-lg-12  col-xl-12 col-xxl-12">
+                            <label for="customerName" class="form-label">Customer Name :</label>
+                            <input type="text" class="form-control bg-input" id="customerName">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mb-3 col-sm-6 col-lg-12  col-xl-12 col-xxl-12">
+                            <label for="address" class="form-label">Address :</label>
+                            <input type="text" class="form-control bg-input" id="address">
+                        </div>
+
+                        <div class="mb-3 col-sm-6 col-lg-12  col-xl-12 col-xxl-12">
+                            <label for="contact" class="form-label">Contact No :</label>
+                            <input type="text" class="form-control bg-input" id="contact">
+                        </div>
+                    </div>
+
+                    <div class="container-fluid manage-btns">
+                        
+                        <section class="row">
+                            <button type="button" class="btn btn-save-outline mx-auto mb-3 col-11 d-none d-sm-none d-lg-block">Save</button>
+                        </section>
+                        
+                        <section class="row">
+                            <button type="button" class="btn btn-save-outline mx-auto mb-3 col-11 col-sm-2 d-lg-none ">Save</button>
+                            <button type="button" class="btn btn-edit-outline mx-auto mb-3 col-3 col-sm-2 col-lg-3">Edit</button>
+                            <button type="button" class="btn btn-delete-outline mx-auto mb-3 col-3 col-sm-2 col-lg-3">Delete</button>
+                            <button type="button" class="btn btn-clear-outline mx-auto mb-3 col-3  col-sm-2 col-lg-3">Clear</button>
+                        </section>
+                    
+                    </div>
+                </form>
+                
+                <!-- Customer Table -->
+                <div id="tbl-customer" class="col-12 col-sm-12 col-lg-7 mx-auto content-bg mb-5">
+                    <table class="col table mt-3">
+                        <thead class="tbl-head">
+                          <tr>
+                            <th scope="col">Customer ID</th>
+                            <th scope="col">Customer Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Contact No</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>C001</td>
+                            <td>Kamal</td>
+                            <td>Colombo</td>
+                            <td>0716455453</td>
+                          </tr>
+                          <tr>
+                            <td>C002</td>
+                            <td>Bimal</td>
+                            <td>Galle</td>
+                            <td>0716455452</td>
+                          </tr>
+                          <tr>
+                            <td>C003</td>
+                            <td>Nimal</td>
+                            <td>Matara</td>
+                            <td>0716455451</td>
+                          </tr>
+                          <tr>
+                            <td>C004</td>
+                            <td>Amal</td>
+                            <td>Panadura</td>
+                            <td>0716455450</td>
+                          </tr>
+                          <tr>
+                            <td>C004</td>
+                            <td>Amal</td>
+                            <td>Panadura</td>
+                            <td>0716455450</td>
+                          </tr>
+                          <tr>
+                            <td>C004</td>
+                            <td>Amal</td>
+                            <td>Panadura</td>
+                            <td>0716455450</td>
+                          </tr>
+                          <tr>
+                            <td>C004</td>
+                            <td>Amal</td>
+                            <td>Panadura</td>
+                            <td>0716455450</td>
+                          </tr>
+                          <tr>
+                            <td>C004</td>
+                            <td>Amal</td>
+                            <td>Panadura</td>
+                            <td>0716455450</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

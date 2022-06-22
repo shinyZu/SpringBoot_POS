@@ -1,0 +1,305 @@
+.content-bg {
+  border-radius: 10px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #ffffff10;
+  backdrop-filter: brgba(2, 1, 1, 0.432);
+}
+
+div.title-bg {
+  color: rgb(255, 255, 255);
+  font-size: 2.25em;
+}
+
+p#title-mng-cust {
+  margin: auto;
+}
+
+form>div label {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.manage-btns>section>button {
+  color: aliceblue;
+}
+
+.btn-save-outline {
+  border: 3px solid #1abc9c !important;
+  color: #1abc9c !important;
+}
+
+.btn-save-outline:hover {
+  background-color: #1abc9c !important;
+  color: #ffffff !important;
+}
+
+.btn-edit-outline {
+  border: 3px solid #3498db !important;
+  color: #3498db !important;
+}
+
+.btn-edit-outline:hover {
+  background-color: #3498db !important;
+  color: #ffffff !important;
+}
+
+.btn-delete-outline {
+  border: 3px solid #e66767 !important;
+  color: #e66767 !important;
+}
+
+.btn-delete-outline:hover {
+  background-color: #e66767 !important;
+  color: #ffffff !important;
+}
+
+.btn-clear-outline {
+  border: 3px solid #747d8c !important;
+  color: #747d8c !important;
+}
+
+.btn-clear-outline:hover {
+  background-color: #747d8c !important;
+  color: #ffffff !important;
+}
+
+.btn-purchase-outline {
+  border: 3px solid #ff7f50 !important;
+  color: #ff7f50 !important;
+}
+
+.btn-purchase-outline:hover {
+  background-color: #ff7f50 !important;
+  color: #ffffff !important;
+}
+
+.tbl-head {
+  background-color: #112d328c;
+  color: rgb(255, 255, 255);
+}
+
+table td {
+  color: rgba(255, 255, 255, 0.603);
+}
+
+.bg-input {
+  background-color: rgba(255, 255, 255, 0.808);
+}
+
+p.errorText {
+  margin-bottom: 0;
+}
+
+.btn-save-outline:disabled {
+  border: 1px solid #1abc9c !important;
+}
+
+.btn-edit-outline:disabled {
+  border: 1px solid #3498db !important;
+}
+
+.btn-delete-outline:disabled {
+  border: 1px solid #e66767 !important;
+}
+
+.btn-purchase-outline:disabled {
+  border: 1px solid #ff7f50 !important;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar:hover {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1abc9c;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #112d32;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #112d32;
+}
+
+/* --------------------------------------------------------------Table Scrollbar------------------------------------------------ */
+
+#customer-table-pane::-webkit-scrollbar,
+#item-table-pane::-webkit-scrollbar,
+#tbl-orders::-webkit-scrollbar,
+#invoice-table-pane::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* #tbl-invoice::-webkit-scrollbar:hover {
+  cursor: pointer;
+}
+
+#tbl-invoice::-webkit-scrollbar-thumb {
+  background-color: #1abc9c;
+  border-radius: 50px;
+}
+
+#tbl-invoice::-webkit-scrollbar-track {
+  background-color: #112d328c;
+  border-radius: 50px;
+}
+
+#tbl-invoice::-webkit-scrollbar-corner {
+  background-color: #112d328c;
+} */
+
+/* --------------------------------------------------------------------------------------------Cards------------------------------------------ */
+
+.card * {
+  color: #cacaca;
+}
+
+.card i {
+  font-size: 6vw;
+}
+
+.card h2 {
+  font-size: 4vw;
+  padding-top: 5px;
+}
+
+.card h3 {
+  font-size: 3vw;
+}
+
+.table-hover {
+  /* border: 2px solid red; */
+  --bs-table-hover-bg: rgb(255 255 255 / 50%);
+}
+
+/* ------------------------------------------------------------------------------Home-------------------------------------------------- */
+#home-main {
+  height: calc(100vh - 75px);
+  background-image: url("../images/pos/bg1.jpg");
+  background-size: cover;
+  margin-top: 75px;
+}
+
+#customer-main,
+#store-main,
+#orders-main {
+  background-image: url("../images/pos/background.jpg");
+  background-size: cover;
+  /*height: fit-content;*/
+  height: 100vh;
+  margin-top: 75px;
+  display: none;
+}
+
+/* ------------------------------------------------------------------------------Manage Customers-------------------------------------------------- */
+
+#customer-table-pane {
+  height: 550px;
+  overflow-y: auto;
+}
+
+/* ------------------------------------------------------------------------------Manage Items-------------------------------------------------- */
+
+#item-table-pane {
+  height: 550px;
+  overflow-y: auto;
+}
+
+/* ------------------------------------------------------------------------------Manage Invoices-------------------------------------------------- */
+
+#invoice-table-pane {
+  overflow-y: auto;
+}
+
+#tblOrders {
+  /*height: 380px;*/
+  /*height: 550px;*/
+  overflow-y: auto;
+}
+
+#section-1 {
+  width: 100%;
+  background-image: url("../images/pos/background.jpg");
+  background-size: cover;
+}
+
+#section-2 {
+  width: auto;
+  background-image: url("../images/pos/background.jpg");
+  background-size: cover;
+}
+
+#date,
+select,
+tr {
+  cursor: pointer;
+}
+
+select:disabled {
+  cursor: default;
+}
+
+/* input:focus {
+  border: 2px solid orchid !important;
+} */
+
+#txtOrderID {
+  color: #099277;
+  font-size: large;
+  font-weight: 700;
+  font-weight: 700;
+}
+
+#txtCustomerId,
+#txtItemCode {
+  color: #099277;
+  font-weight: 700;
+}
+
+#txtTotal[placeholder],
+label[for="txtTotal"] {
+  color: #3498db;
+  /* font-size: large; */
+  font-weight: 700;
+}
+
+#txtSubTotal,
+label[for="txtSubTotal"] {
+  color: #e66767;
+  /* font-size: large; */
+  font-weight: 700;
+}
+
+#txtTotal,
+#txtDiscount,
+#txtSubTotal,
+#txtAmountPaid,
+#txtBalance {
+  text-align: right;
+}
+
+
+/* ------------------------------------------------------------------------------Login/SignUp-------------------------------------------------- */
+#login-signup {
+  border: 2px solid red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  background-color: #112d32;
+  padding: 50px;
+  z-index: 1;
+}
