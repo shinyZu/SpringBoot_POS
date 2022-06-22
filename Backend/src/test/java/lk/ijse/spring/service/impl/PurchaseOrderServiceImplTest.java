@@ -1,28 +1,17 @@
 package lk.ijse.spring.service.impl;
 
-import lk.ijse.spring.config.WebAppConfig;
 import lk.ijse.spring.dto.CustomerDTO;
 import lk.ijse.spring.dto.OrderDetailDTO;
 import lk.ijse.spring.dto.OrdersDTO;
 import lk.ijse.spring.service.PurchaseOrderService;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
-import org.springframework.test.context.web.WebAppConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
 
-import javax.transaction.Transactional;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-@WebAppConfiguration
-@ContextConfiguration(classes = {WebAppConfig.class})
-@ExtendWith({SpringExtension.class})
-//@Transactional
+@SpringBootTest
 class PurchaseOrderServiceImplTest {
 
     @Autowired
@@ -44,8 +33,8 @@ class PurchaseOrderServiceImplTest {
     @Test
     void purchaseOrder() {
         List<OrderDetailDTO> detailDTOS = new ArrayList<>();
-        detailDTOS.add(new OrderDetailDTO("OID-008","I00-001",3));
-        detailDTOS.add(new OrderDetailDTO("OID-008","I00-002",4));
+        detailDTOS.add(new OrderDetailDTO("OID-008", "I00-001", 3));
+        detailDTOS.add(new OrderDetailDTO("OID-008", "I00-002", 4));
 
         // OrderDate -> LocalDate
         /*OrdersDTO ordersDTO = new OrdersDTO("OID-001", LocalDate.of(2022, 6,21), 400.00, 12,

@@ -18,9 +18,9 @@ let pwd;
 
 let reply;
 
-let customerAPIBaseUrl = "http://localhost:8080/springBackend/api/pos/customer";
-let itemAPIBaseUrl = "http://localhost:8080/springBackend/api/pos/item";
-let ordersAPIBaseUrl = "http://localhost:8080/springBackend/api/pos/orders";
+let customerAPIBaseUrl = "http://localhost:8080/springboot/api/pos/customer";
+let itemAPIBaseUrl = "http://localhost:8080/springboot/api/pos/item";
+let ordersAPIBaseUrl = "http://localhost:8080/springboot/api/pos/orders";
 
 getCustomerCount();
 getItemCount();
